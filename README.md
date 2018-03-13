@@ -77,7 +77,14 @@ nix:
     - freeglut
 ```
 
-You seem to have to first build *with Nix*, then *without Nix* and execute *without Nix*, so it looks like this:
+On a machine running NixOS, you should be able to get it running with this:
+
+```shell
+$ stack build
+$ stack exec -- shu-thing
+```
+
+On an Ubuntu machine, you seem to have to first build *with Nix*, then *without Nix* and execute *without Nix*, so it looks like this:
 
 ```shell
 $ stack build
